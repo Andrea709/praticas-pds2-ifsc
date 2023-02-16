@@ -17,7 +17,7 @@ public class Conexao {
 		
 	}
 	
-	public Conexao getInstancia() {
+	public static Conexao getInstancia() {
 		if(instancia == null) {
 			instancia = new Conexao();
 		}
@@ -27,7 +27,7 @@ public class Conexao {
 	//
 	
 	//conexao do banco de dados em si, por enquanto é um servidor que roda apenas na nossa maquina
-	public static Connection conectar() {
+	public  Connection conectar() {
 		try {
 			conexao = DriverManager.getConnection("jdbc:mysql://localhost/" 
 					+ DATABASE + "?severTimezone=UTC", USER, PSW);
@@ -40,7 +40,7 @@ public class Conexao {
 	//
 	
 	//fechamento da conexao
-	public static boolean fecharConexao() {
+	public  boolean fecharConexao() {
 	
 		try {
 			conexao.close();
