@@ -1,0 +1,19 @@
+1- Biblioteca: A biblioteca é uma coleção de subprogramas para auxiliar no desenvolvimento de software para o programador. Elas contém códigos auxiliares que permitem o compartilhamento e alteração de códigos de forma modular. 
+API: É uma interface que permite aos programadores acessar funcionalidades complexas de um software, que estão padronizadas dentro desse ambiente.
+
+ 2 - a -  MVC: é um padrão composto por Modelo, Visão e Controle, que separa a lógica de negócio, a apresentação dos dados e o controle da aplicação. Ele é muito útil para a organização do projeto, deixando tudo com boas práticas.
+b - DAO:  É um padrão utilizado para abstrair e encapsular todos os acessos ao data source, e O DAO gerencia a conexão com o data source para obter e armazenar informações.
+c- Singleton - O padrão Singleton permite criar objetos únicos para os quais há apenas uma instância. Este padrão oferece um ponto de acesso global, assim como uma variável global, porém sem as desvantagens das variáveis globais.
+
+3-  O modelo JDBC é uma API(visto anteriormente) que reúne classes e interfaces do Java, onde se consegue conectar um banco de dados com mais facilidade.
+
+4- é uma sigla utilizada para se referir às quatro operações básicas realizadas em banco de dados relacionais que são consulta, inclusão, alteração e exclusão dos registros
+
+5-  Connection: representa a conexão com o banco de dados 
+PreparedStatement:É usado para criar um objeto que representa a instrução SQL que será executada, sendo que é invocado através do objeto Connection.
+Statement: é uma interface utilizada para executar instruções em SQL.
+
+6- Pode-se usar os dois, porém o Prepared Statement é mais otimizado para fazer bons retornos sem sobrecarregar o banco de dados. Em uma consulta que não precisa de muitos parâmetros, o Statement é muito bom, mas se não é melhor usar o PreparedStatement (essa pergunta eu não sabia muito bem como responder, então segue aqui o link de referência da resposta: https://pt.stackoverflow.com/questions/99620/qual-a-diferen%C3%A7a-entre-o-statement-e-o-preparedstatement
+
+7 - O WindowBuilder possibilita a construção de telas com API’s do Java. Enquanto o Swing renderiza por conta própria os componentes, ou seja, não é você que cria manualmente. 
+
