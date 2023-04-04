@@ -27,6 +27,7 @@ public class Ex8 {
 		
 		
 		
+		
 		conexao.close();
 		}catch(SQLException e) {
 			e.printStackTrace();
