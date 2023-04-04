@@ -12,13 +12,14 @@ public class Ex8 {
 		
 		Statement stm = conexao.createStatement();
 		String WSQL;
-//		WSQL = "create database Nog01";
-//		stm.executeUpdate(WSQL);
 		
-		WSQL = "use Nog01";
+		WSQL = "create database if not exists nog";
 		stm.executeUpdate(WSQL);
 		
-		WSQL = "create table Pessoa ("
+		WSQL = "use nog";
+		stm.executeUpdate(WSQL);
+		
+		WSQL = "create table if not exists Pessoa ("
 				+ "	cpf int not null primary key,"
 				+ "    nome varchar(50)"
 				+ ")";

@@ -1,7 +1,10 @@
-create database nog;
+drop database nog;
 
+create database if not exists nog;
 
-create table Pessoa (
+use nog;
+
+create table if not exists Pessoa (
 	cpf int not null primary key,
     nome varchar(50)
 );
